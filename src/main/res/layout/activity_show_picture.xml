@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:orientation="vertical"
+    tools:context="com.ywwang.dcmbroser.ShowPicture">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+        <FrameLayout
+            android:id="@+id/contentFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.ywwang.dcmbroser.ImgFragment"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/showImgBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="显示图像"/>
+
+        <Button
+            android:id="@+id/headerBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:text="查看头文件"/>
+
+        <Button
+            android:id="@+id/showRemarkBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="查看备注"/>
+
+        <Button
+            android:id="@+id/doRemarkBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/remarkbtn"/>
+    </LinearLayout>
+</LinearLayout>
